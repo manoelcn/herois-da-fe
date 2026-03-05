@@ -1,0 +1,44 @@
+name: Build Slides
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'slides/**'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Baixar o repositório
+        uses: actions/checkout@v4
+
+      - name: Instalar o Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Instalar o Marp CLI
+        run: npm install -g @marp-team/marp-cli
+
+      - name: Converter slides para HTML
+        run: |
+          find slides -name "*.md" | while read file; do
+            filename=$(basename "$file" .md)
+            serie=$(basename $(dirname "$file"))
+            mkdir -p "docs/$serie"
+            marp "$file" --output "docs/$serie/$filename.html"
+          done
+
+      - name: Fazer push dos HTMLs gerados
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add docs/
+          git diff --staged --quiet || git commit -m "slides atualizados automaticamente"
+          git push
