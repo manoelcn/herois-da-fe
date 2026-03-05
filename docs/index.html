@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Heróis da Fé — Escola Dominical</title>
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
     body {
       font-family: Georgia, serif;
@@ -20,8 +25,15 @@
       padding: 2.5rem 1rem;
     }
 
-    header h1 { font-size: 2rem; margin-bottom: 0.5rem; }
-    header p  { font-size: 1rem; opacity: 0.85; }
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1rem;
+      opacity: 0.85;
+    }
 
     main {
       max-width: 860px;
@@ -42,7 +54,7 @@
       border-radius: 8px;
       padding: 1.5rem;
       margin-bottom: 2rem;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
     }
 
     .serie ul {
@@ -63,7 +75,9 @@
       transition: background 0.2s;
     }
 
-    .serie ul li a:hover { background: #d9cfff; }
+    .serie ul li a:hover {
+      background: #d9cfff;
+    }
 
     footer {
       text-align: center;
@@ -71,8 +85,27 @@
       font-size: 0.85rem;
       color: #888;
     }
+
+    .intro {
+      background: white;
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+      line-height: 1.7;
+      color: #444;
+    }
+
+    .intro p {
+      margin-bottom: 0.5rem;
+    }
+
+    .intro p:last-child {
+      margin-bottom: 0;
+    }
   </style>
 </head>
+
 <body>
 
   <header>
@@ -81,6 +114,14 @@
   </header>
 
   <main>
+
+    <div class="intro">
+      <p>Bem-vindo ao espaço virtual da <strong>Classe Heróis da Fé</strong>! 🙌</p>
+      <p>Aqui você encontra os slides utilizados nas aulas da nossa Escola Dominical. O material fica disponível após
+        cada aula para que você possa revisar o conteúdo, compartilhar com alguém ou simplesmente guardar como lembrança
+        da nossa caminhada juntos.</p>
+      <p>Que Deus abençoe cada estudo! 📖</p>
+    </div>
 
     <div class="serie">
       <h2>📖 Teste</h2>
@@ -97,4 +138,5 @@
   </footer>
 
 </body>
+
 </html>
