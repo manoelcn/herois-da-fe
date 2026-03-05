@@ -26,13 +26,14 @@ jobs:
       - name: Instalar o Marp CLI
         run: npm install -g @marp-team/marp-cli
 
-      - name: Converter slides para HTML
+      - name: Converter slides para HTML e PDF
         run: |
           find slides -name "*.md" | while read file; do
             filename=$(basename "$file" .md)
             serie=$(basename $(dirname "$file"))
             mkdir -p "docs/$serie"
             marp "$file" --output "docs/$serie/$filename.html"
+            marp "$file" --pdf --output "docs/$serie/$filename.pdf"
           done
 
       - name: Fazer push dos HTMLs gerados
