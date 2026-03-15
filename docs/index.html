@@ -4,39 +4,111 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Heróis da Fé — Escola Dominical</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Escola Dominical</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Source+Sans+3:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
 <body>
+
   <header>
-    <h1>⛪ Heróis da Fé</h1>
-    <p>Escola Dominical — Slides das aulas</p>
+    <h1>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round">
+        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+      </svg>
+      Escola Dominical
+    </h1>
+    <p>Materiais e lições para estudo bíblico</p>
   </header>
+
   <main>
-    <div class="intro">
-      <p>Bem-vindo ao espaço virtual da <strong>Classe Heróis da Fé</strong>! 🙌</p>
-      <p>Aqui você encontra os slides utilizados nas aulas da nossa Escola Dominical. O material fica disponível após
-        cada aula para que você possa revisar o conteúdo, compartilhar com alguém ou simplesmente guardar como lembrança
-        da nossa caminhada juntos.</p>
-      <p>Que Deus abençoe cada estudo! 📖</p>
+    <!-- Search -->
+    <div class="search-wrap">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8" />
+        <line x1="21" y1="21" x2="16.65" y2="16.65" />
+      </svg>
+      <input type="text" placeholder="Buscar lição..." />
     </div>
-    <div class="serie">
-      <h2>✝️ Plano Perfeito</h2>
-      <ul>
-        <li class="aula">
-          <span class="titulo">Aula 05 — O Filho que Redime</span>
-          <div class="links">
-            <a href="plano-perfeito/aula-05-o-filho-que-redime.html">📊 Slides</a>
-            <a href="plano-perfeito/aula-05-o-filho-que-redime.pdf">📄 PDF</a>
-          </div>
-        </li>
-      </ul>
+
+    <!-- Filters -->
+    <div class="filters">
+      <button class="filter-btn active" data-filter="todos">Todos</button>
+      <button class="filter-btn" data-filter="plano-perfeito">Plano Perfeito</button>
+      <!-- <button class="filter-btn" data-filter="novo-testamento">Novo Testamento</button>
+      <button class="filter-btn" data-filter="evangelhos">Evangelhos</button>
+      <button class="filter-btn" data-filter="epistolas">Epístolas</button>
+      <button class="filter-btn" data-filter="vida-crista">Vida Cristã</button> -->
     </div>
+
+    <!-- Card 1 -->
+    <div class="lesson-card" data-category="plano-perfeito">
+      <div class="card-meta">
+        <span class="badge">Plano Perfeito</span>
+        <span class="card-date">1 de fevereiro de 2026</span>
+      </div>
+      <div class="card-title">O Filho que Redime</div>
+      <div class="card-desc">Estudo sobre Jesus como o Cordeiro de Deus que redime a humanidade do pecado e nos reconcilia com o Pai.</div>
+      <div class="card-actions">
+        <a href="plano-perfeito/aula-05-o-filho-que-redime.html" style="text-decoration: none;" class="btn btn-slides">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <rect x="2" y="3" width="20" height="14" rx="2" />
+            <polyline points="8 21 12 17 16 21" />
+          </svg>
+          Ver Slides
+        </a>
+        <a href="plano-perfeito/aula-05-o-filho-que-redime.pdf" style="text-decoration: none;" class="btn btn-pdf">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+            <polyline points="14 2 14 8 20 8" />
+            <line x1="12" y1="18" x2="12" y2="12" />
+            <line x1="9" y1="15" x2="15" y2="15" />
+          </svg>
+          Baixar PDF
+        </a>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <!-- <div class="lesson-card" data-category="evangelhos">
+      <div class="card-meta">
+        <span class="badge evangelhos">Evangelhos</span>
+        <span class="card-date">08 de março de 2026</span>
+      </div>
+      <div class="card-title">O Sermão do Monte</div>
+      <div class="card-desc">As bem-aventuranças e os ensinamentos de Jesus em Mateus 5-7.</div>
+      <div class="card-actions">
+        <button class="btn btn-slides">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <rect x="2" y="3" width="20" height="14" rx="2" />
+            <polyline points="8 21 12 17 16 21" />
+          </svg>
+          Ver Slides
+        </button>
+        <button class="btn btn-pdf">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+            <polyline points="14 2 14 8 20 8" />
+            <line x1="12" y1="18" x2="12" y2="12" />
+            <line x1="9" y1="15" x2="15" y2="15" />
+          </svg>
+          Baixar PDF
+        </button>
+      </div>
+    </div> -->
   </main>
-  <footer>
-    Atualizado automaticamente via GitHub Actions
-  </footer>
+
+  <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
