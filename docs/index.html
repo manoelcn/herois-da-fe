@@ -5,116 +5,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Heróis da Fé — Escola Dominical</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: Georgia, serif;
-      background: #f5f0e8;
-      color: #2c2c2c;
-    }
-
-    header {
-      background: #3b1f6e;
-      color: white;
-      text-align: center;
-      padding: 2.5rem 1rem;
-    }
-
-    header h1 {
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
-    }
-
-    header p {
-      font-size: 1rem;
-      opacity: 0.85;
-    }
-
-    main {
-      max-width: 860px;
-      margin: 2.5rem auto;
-      padding: 0 1rem;
-    }
-
-    h2 {
-      font-size: 1.3rem;
-      color: #3b1f6e;
-      border-left: 4px solid #3b1f6e;
-      padding-left: 0.75rem;
-      margin-bottom: 1rem;
-    }
-
-    .serie {
-      background: white;
-      border-radius: 8px;
-      padding: 1.5rem;
-      margin-bottom: 2rem;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
-    }
-
-    .serie ul {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-    }
-
-    .serie ul li a {
-      display: block;
-      padding: 0.6rem 1rem;
-      background: #f0ebff;
-      border-radius: 6px;
-      color: #3b1f6e;
-      text-decoration: none;
-      font-size: 0.95rem;
-      transition: background 0.2s;
-    }
-
-    .serie ul li a:hover {
-      background: #d9cfff;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.85rem;
-      color: #888;
-    }
-
-    .intro {
-      background: white;
-      border-radius: 8px;
-      padding: 1.5rem;
-      margin-bottom: 2rem;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
-      line-height: 1.7;
-      color: #444;
-    }
-
-    .intro p {
-      margin-bottom: 0.5rem;
-    }
-
-    .intro p:last-child {
-      margin-bottom: 0;
-    }
-  </style>
+  <link rel="stylesheet" href="/docs/assets/css/style.css">
 </head>
 
 <body>
-
   <header>
     <h1>⛪ Heróis da Fé</h1>
     <p>Escola Dominical — Slides das aulas</p>
   </header>
-
   <main>
-
     <div class="intro">
       <p>Bem-vindo ao espaço virtual da <strong>Classe Heróis da Fé</strong>! 🙌</p>
       <p>Aqui você encontra os slides utilizados nas aulas da nossa Escola Dominical. O material fica disponível após
@@ -122,24 +21,22 @@
         da nossa caminhada juntos.</p>
       <p>Que Deus abençoe cada estudo! 📖</p>
     </div>
-
     <div class="serie">
       <h2>✝️ Plano Perfeito</h2>
       <ul>
-        <li>
-          <a href="plano-perfeito/aula-05-o-filho-que-redime.html">Aula 05 — O Filho que Redime</a>
-          <br>
-          <a href="plano-perfeito/aula-05-o-filho-que-redime.pdf">📄 PDF</a>
+        <li class="aula">
+          <span class="titulo">Aula 05 — O Filho que Redime</span>
+          <div class="links">
+            <a href="plano-perfeito/aula-05-o-filho-que-redime.html">📊 Slides</a>
+            <a href="plano-perfeito/aula-05-o-filho-que-redime.pdf">📄 PDF</a>
+          </div>
         </li>
       </ul>
     </div>
-
   </main>
-
   <footer>
     Atualizado automaticamente via GitHub Actions
   </footer>
-
 </body>
 
 </html>

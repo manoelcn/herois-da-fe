@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Georgia, serif;
+    background: #f5f0e8;
+    color: #2c2c2c;
+}
+
+header {
+    background: #3b1f6e;
+    color: white;
+    text-align: center;
+    padding: 2.5rem 1rem;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1rem;
+    opacity: 0.85;
+}
+
+main {
+    max-width: 860px;
+    margin: 2.5rem auto;
+    padding: 0 1rem;
+}
+
+h2 {
+    font-size: 1.3rem;
+    color: #3b1f6e;
+    border-left: 4px solid #3b1f6e;
+    padding-left: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.serie {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+}
+
+.serie ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.intro {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+    line-height: 1.7;
+    color: #444;
+}
+
+.intro p {
+    margin-bottom: 0.5rem;
+}
+
+.intro p:last-child {
+    margin-bottom: 0;
+}
+
+.aula {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f0ebff;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+}
+
+.titulo {
+    font-size: 0.95rem;
+}
+
+.links {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.links a {
+    color: #3b1f6e;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
