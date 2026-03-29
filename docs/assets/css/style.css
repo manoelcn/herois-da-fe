@@ -1,0 +1,228 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Source Sans 3', sans-serif;
+    background: #f4f5f7;
+    color: #1a1a2e;
+}
+
+/* HEADER */
+header {
+    background: #1a3bab;
+    color: white;
+    text-align: center;
+    padding: 32px 20px;
+}
+
+header h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+header h1 svg {
+    width: 36px;
+    height: 36px;
+}
+
+header p {
+    margin-top: 6px;
+    font-size: 0.95rem;
+    opacity: 0.85;
+}
+
+/* MAIN */
+main {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 32px 16px 60px;
+}
+
+/* SEARCH */
+.search-wrap {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.search-wrap svg {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9ca3af;
+    width: 18px;
+    height: 18px;
+}
+
+.search-wrap input {
+    width: 100%;
+    padding: 12px 16px 12px 42px;
+    border: 1.5px solid #e0e3ea;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-family: inherit;
+    background: white;
+    color: #374151;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.search-wrap input:focus {
+    border-color: #1a3bab;
+}
+
+.search-wrap input::placeholder {
+    color: #9ca3af;
+}
+
+/* FILTERS */
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 28px;
+}
+
+.filter-btn {
+    padding: 7px 18px;
+    border-radius: 999px;
+    border: 1.5px solid #d1d5db;
+    background: white;
+    font-size: 0.88rem;
+    font-family: inherit;
+    cursor: pointer;
+    color: #374151;
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+
+.filter-btn:hover {
+    border-color: #1a3bab;
+    color: #1a3bab;
+}
+
+.filter-btn.active {
+    background: #1a3bab;
+    color: white;
+    border-color: #1a3bab;
+}
+
+/* LESSON CARDS */
+.lesson-card {
+    background: white;
+    border-radius: 12px;
+    padding: 24px 28px;
+    margin-bottom: 16px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.07);
+    transition: box-shadow 0.2s;
+}
+
+.lesson-card:hover {
+    box-shadow: 0 4px 16px rgba(26, 59, 171, 0.1);
+}
+
+.card-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 3px 12px;
+    border-radius: 999px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    background: #e8ecf8;
+    color: #1a3bab;
+}
+
+.badge.evangelhos {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+.badge.epistolas {
+    background: #fff3e0;
+    color: #e65100;
+}
+
+.badge.vida {
+    background: #f3e5f5;
+    color: #7b1fa2;
+}
+
+.card-date {
+    font-size: 0.82rem;
+    color: #9ca3af;
+}
+
+.card-title {
+    font-family: 'Merriweather', serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: #111827;
+}
+
+.card-desc {
+    font-size: 0.9rem;
+    color: #6b7280;
+    margin-bottom: 18px;
+    line-height: 1.5;
+}
+
+.card-actions {
+    display: flex;
+    gap: 12px;
+}
+
+.btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    border: none;
+    transition: opacity 0.15s, transform 0.1s;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.btn-slides {
+    background: #1a3bab;
+    color: white;
+}
+
+.btn-pdf {
+    background: #1b8c4e;
+    color: white;
+}
+
+.btn svg {
+    width: 17px;
+    height: 17px;
+}
