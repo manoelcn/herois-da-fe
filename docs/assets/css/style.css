@@ -226,3 +226,28 @@ main {
     width: 17px;
     height: 17px;
 }
+
+.breadcrumb {
+    margin-bottom: 24px;
+}
+
+.breadcrumb a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #1a3bab;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 0.15s;
+}
+
+.breadcrumb a:hover {
+    opacity: 1;
+}
+
+.breadcrumb svg {
+    width: 16px;
+    height: 16px;
+}
